@@ -1,0 +1,6 @@
+apiRequest(0.1)
+
+-- Fix for black screen SLUS-20071, side effect is lack of some in-game sounds.
+
+eeInsnReplace(0x2B06EC, 0x24060001, 0x24060000)
+eeInsnReplace(0x2b0868, 0x10400014, 0x10000014)
