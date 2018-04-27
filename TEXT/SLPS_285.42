@@ -2,3 +2,4 @@
 --gs-use-clut-merge=1 
 --gs-kernel-cl="clutmerge"
 --gs-kernel-cl-up="clutmerge2x2" 
+#Fix freeze, and graphical issues
