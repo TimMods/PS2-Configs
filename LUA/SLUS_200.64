@@ -1,0 +1,5 @@
+apiRequest(0.1)
+
+-- Fix for hang at loading screen
+
+eeInsnReplace(0x1CF3CC, 0x4100FFFF, 0x00000000)
