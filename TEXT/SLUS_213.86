@@ -4,3 +4,4 @@
 --fpu-accurate-range=0x27FFFC,0x27FFFF
 --fpu-accurate-range=0x2921F4,0x2921F8
 #choral castle soft lock fix
+#still require fix for missing characters in prerendered cutscenes, probably fpu clamping issue
