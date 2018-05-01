@@ -1,0 +1,6 @@
+--gs-uprender=none
+--gs-upscale=none
+#fix coruption lines caused by upscsaler, remember to remove 2x2 that already exist in config
+--fpu-accurate-range=0x27FFFC,0x27FFFF
+--fpu-accurate-range=0x2921F4,0x2921F8
+#choral castle soft lock fix
