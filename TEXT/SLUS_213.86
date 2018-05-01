@@ -4,4 +4,12 @@
 --fpu-accurate-range=0x27FFFC,0x27FFFF
 --fpu-accurate-range=0x2921F4,0x2921F8
 #choral castle soft lock fix
-#still require fix for missing characters in prerendered cutscenes, probably fpu clamping issue
+--fpu-no-clamping=0
+--vu0-no-clamping=0
+--vu1-no-clamping=0
+--cop2-no-clamping=0
+--fpu-clamp-results=1
+--vu0-clamp-results=1
+--vu1-clamp-results=1
+--cop2-clamp-results=1
+#Seems to fix not renedering characters in cut scenes
