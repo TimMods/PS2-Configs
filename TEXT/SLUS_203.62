@@ -1,0 +1,2 @@
+--gs-uprender=none
+#Fix vertical lines/stripes, car reflections still bugged. Different gs plugin, and clamping vu0/1 cop2 don't help. 
