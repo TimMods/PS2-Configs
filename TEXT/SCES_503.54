@@ -1,0 +1,2 @@
+--fpu-no-clamping=1
+#Fix for misplaced objects, still require fix for texturing problems.
