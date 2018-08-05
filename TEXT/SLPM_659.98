@@ -1,0 +1,7 @@
+--gs-motion-factor=50
+--host-audio-latency=0.01
+--gs-kernel-cl="h2lpool"
+--gs-kernel-cl-up="h2lpool2x2"
+--gs-h2l-list-opt=1
+--gs-h2l-accurate-hash=1
+#Fix for performance issues. PS4 Pro required for full speed.
