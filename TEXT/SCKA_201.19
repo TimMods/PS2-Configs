@@ -1,0 +1,5 @@
+--fpu-accurate-range=0x1C0000,0x1D0000 
+--gs-use-clut-merge=1 
+--gs-kernel-cl="clutmerge"
+--gs-kernel-cl-up="clutmerge2x2" 
+# Fix control after exiting the menu, and graphic bugs. 0x1C0000,0x1D0000 range can be clamped is someone will find it slow.
