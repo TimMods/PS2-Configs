@@ -1,0 +1,5 @@
+--gs-uprender=2x2
+--gs-upscale=EdgeSmooth
+--gs-kernel-cl-up="up2x2skipinterp"
+--gs-optimize-30fps=1
+#Fixes shadows
