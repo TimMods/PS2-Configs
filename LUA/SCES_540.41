@@ -1,0 +1,8 @@
+apiRequest(0.1)	-- request version 0.1 API. Calling apiRequest() is mandatory.
+
+-- Collision detection fix.
+
+eeInsnReplace(0x131EB4, 0x4B00682C, 0x48498800)
+eeInsnReplace(0x131EB8, 0x4B0C682C, 0x4B00682C)
+eeInsnReplace(0x131EC4, 0x48498800, 0x484A8800)
+eeInsnReplace(0x131EC8, 0x484A8800, 0x4B0C682C)
