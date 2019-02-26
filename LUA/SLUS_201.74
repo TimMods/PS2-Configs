@@ -1,0 +1,9 @@
+apiRequest(0.1)
+
+-- Fix hang, Untested!
+
+emuMediaPatch(0x3AEDA, 12 + 0x114, { 0x14800007 }, { 0x14080006 })
+emuMediaPatch(0x3AEDA, 12 + 0x118, { 0x00438021 }, { 0x00432021 })
+emuMediaPatch(0x3AEDA, 12 + 0x12c, { 0x1040fffc }, { 0x1040ffeb })
+emuMediaPatch(0x3AEDA, 12 + 0x130, { 0x00000000 }, { 0x24840004 })
+emuMediaPatch(0x3AEDA, 12 + 0x134, { 0x26040004 }, { 0x2490fffc })
