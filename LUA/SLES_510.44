@@ -1,0 +1,10 @@
+apiRequest(0.1)    -- request version 0.1 API. Calling apiRequest() is mandatory.
+
+-- SLES-51044 / SLES-52968 - Fix white parts
+-- Major thanks to Maori-Jigglypuff for reversing that
+
+eeInsnReplace(0x2485B8, 0xC6800D18, 0x3C014316)
+eeInsnReplace(0x2485CC, 0xE4400000, 0xAC410000)
+eeInsnReplace(0x262604, 0xC7809780, 0x3C014316)
+eeInsnReplace(0x262618, 0xE4400000, 0xAC410000)
+eeInsnReplace(0x2564B8, 0x8F829764, 0x24020000)
