@@ -1,0 +1,6 @@
+apiRequest(0.1)
+
+-- SLES-54587
+
+eeInsnReplace(0x11e0f4, 0x0c066a40, 0x00000000)
+eeInsnReplace(0x11e0fc, 0x0c08a8d0, 0x00000000)
