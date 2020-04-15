@@ -1,0 +1,3 @@
+-- Branch always in renShadowClient::Prep(void) to avoid drawing. Speedhack.
+
+emuMediaPatch(0x1E1, 12 + 0x324, { 0x1060007A }, { 0x1000007A })
