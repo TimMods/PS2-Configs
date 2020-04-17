@@ -1,3 +1,23 @@
--- Branch always in renShadowClient::Prep(void) to avoid drawing. Speedhack.
+apiRequest(2.2) -- to assure we run it on latest emu
 
-emuMediaPatch(0x1E1, 12 + 0x324, { 0x1060007A }, { 0x1000007A })
+local emuObj = getEmuObject()
+
+-- Halo removal. Possibly not needed with patches below. But i left it, as should no harm.
+emuObj.SetGsTitleFix( "forceSimpleFetch", "reserved", { texMode=1 } )
+
+-- Force Widescreen on boot, Force hidden Full Framebuffer Progressive Scan at boot,
+-- Do similar stuff as PCSX2 aggressive CRC hack, so remove some extensive effects (speedhack)
+emuMediaPatch(0x1e1, 12 + 0x40, { 0x27bdfee0 }, { 0x03e00008 })
+emuMediaPatch(0x1e1, 12 + 0x44, { 0x7fb300d0 }, { 0x00000000 })
+emuMediaPatch(0x28b, 12 + 0x38, { 0x8c86cc90 }, { 0x24060001 })
+emuMediaPatch(0x385, 12 + 0x594, { 0x3c013faa }, { 0x3c013fe3 })
+emuMediaPatch(0x385, 12 + 0x598, { 0x3421aaab }, { 0x34218e39 })
+emuMediaPatch(0x28b, 12 + 0x3c, { 0x8ca7cc94 }, { 0x24070001 })
+emuMediaPatch(0x355, 12 + 0x344, { 0xac60cc94 }, { 0xac65cc94 })
+emuMediaPatch(0x354, 12 + 0x3e0, { 0x27bdff20 }, { 0x03e00008 })
+emuMediaPatch(0x354, 12 + 0x3e4, { 0x3c02002a }, { 0x00000000 })
+emuMediaPatch(0x1e8, 12 + 0x1d8, { 0x27bdff40 }, { 0x03e00008 })
+emuMediaPatch(0x1e8, 12 + 0x1dc, { 0x00052900 }, { 0x00000000 })
+emuMediaPatch(0x1dc, 12 + 0x478, { 0x27bdff50 }, { 0x03e00008 })
+emuMediaPatch(0x1dc, 12 + 0x47c, { 0x3c02002a }, { 0x00000000 })
+eeInsnReplace(0x29c2b4, 0x00000001, 0x00000000)
