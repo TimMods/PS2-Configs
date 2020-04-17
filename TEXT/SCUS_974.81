@@ -1,0 +1,10 @@
+--vu1-opt-flags=2
+--vu1-di-bits=1
+--vu1-mpg-cycles=800
+--vu1-injection=1
+--vu1-opt-vf00=2
+--vu1-jr-cache-policy=newprog
+--vu1-jalr-cache-policy=newprog
+--ee-block-validation=PageProt
+--gs-frontend-opt-mode=2
+--fpu-rsqrt-fast-estimate=1
