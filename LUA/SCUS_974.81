@@ -1,5 +1,6 @@
 apiRequest(2.2) --make sure we are running latest emu
 
+
 local emuObj = getEmuObject()
 emuObj.SetGsTitleFix( "forceSimpleFetch", "reserved", { texMode=1 } )
 
@@ -14,3 +15,5 @@ emuMediaPatch(0x40d, 12 + 0x14c, { 0x3c013faa }, { 0x3c013fe3 })
 emuMediaPatch(0x40d, 12 + 0x150, { 0x3421aaab }, { 0x34218e39 })
 emuMediaPatch(0x3d0, 12 + 0x608, { 0xac4086dc }, { 0xa04986dc })
 emuMediaPatch(0x2e4, 12 + 0x5d4, { 0x8ca286dc }, { 0x24020001 })
+emuMediaPatch(0x169, 12 + 0x6b0, { 0x27bdff60 }, { 0x03e00008 })
+emuMediaPatch(0x169, 12 + 0x6b4, { 0x7fb10080 }, { 0x00000000 })
