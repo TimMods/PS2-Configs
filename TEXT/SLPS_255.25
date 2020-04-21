@@ -1,0 +1,2 @@
+--force-frame-blend=1
+--gs-use-deferred-l2h=0
