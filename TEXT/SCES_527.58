@@ -1,0 +1,9 @@
+--ee-block-validation=PageProt
+--vu1-opt-flags=1
+--vu1-jr-cache-policy=newprog
+--vu1-jalr-cache-policy=newprog
+--vu1-mpg-cycles=2050
+--gs-frontend-opt-mode=2
+--gs-adaptive-frameskip=1
+--fpu-accurate-range=0x28C154,0x28C5B0
+#"fpu-accurate-range"Fixes the crash on Chapter 5 in the ambush.
