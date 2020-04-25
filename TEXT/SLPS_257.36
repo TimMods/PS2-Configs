@@ -1,0 +1,10 @@
+--gs-upscale=point
+--gs-uprender=2x2
+--gs-motion-factor=25
+--host-audio-latency=0.01
+--gs-ignore-dirty-page-border=1
+--gs-kernel-cl="h2lpool"
+--gs-kernel-cl-up="h2lpool2x2"
+--gs-h2l-list-opt=1
+--gs-h2l-accurate-hash=1
+#same as Anthology, which VI is a patched-out section of; substantial slowdown during combat has been mitigated.
