@@ -1,0 +1,5 @@
+apiRequest(0.1)
+
+-- Problematic mipmaps
+
+eeInsnReplace(0x129800, 0x10600022, 0x10000022)
