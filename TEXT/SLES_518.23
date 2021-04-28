@@ -1,0 +1,17 @@
+--fpu-no-clamping=0
+--fpu-clamp-results=1
+--vu0-no-clamping=0
+--vu0-clamp-results=1
+--vu1-no-clamping=0
+--vu1-clamp-results=1
+--cop2-no-clamping=0
+--cop2-clamp-results=1
+--vu0-opt-flags=1
+--vu1-opt-flags=1
+--cop2-opt-flags=1
+--vu0-const-prop=0
+--vu1-jr-cache-policy=newprog
+--vu1-jalr-cache-policy=newprog
+--vu0-jalr-cache-policy=newprog
+
+#fix for graphical glitches.

@@ -1,0 +1,5 @@
+--vu-xgkick-delay=0.58
+
+#Fix for missing character models/textures
+#This is wrong value, but work due to UB.
+#I can't personally fix it, and it work, so.. 
