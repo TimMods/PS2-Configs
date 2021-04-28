@@ -9,11 +9,7 @@
 --vu0-opt-flags=1
 --vu1-opt-flags=1
 --cop2-opt-flags=1
---vu0-const-prop=0
---vu1-const-prop=0
 --vu1-jr-cache-policy=newprog
 --vu1-jalr-cache-policy=newprog
---vu0-jr-cache-policy=newprog
---vu0-jalr-cache-policy=newprog
 # This file try to mimic default PCSX2 settings.
 # Any game having graphical or speed issue should be tested also with that config
