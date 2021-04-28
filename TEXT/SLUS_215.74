@@ -1,0 +1,7 @@
+--vu0-no-clamping=1
+--vu0-clamp-results=1
+--vu1-no-clamping=0
+--vu1-clamp-results=1
+
+--cop2=trans
+# fix for graphical corruption and upside down characters/assets
