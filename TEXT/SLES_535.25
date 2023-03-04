@@ -1,0 +1,15 @@
+--gs-uprender=2x2
+--gs-upscale=edgesmooth
+--gs-override-small-tri-area=1
+
+--vif1-instant-xfer=0
+
+--ee-cycle-scalar=1.8
+--ee-sif1-cycle-scalar=1.8
+--iop-cycle-scalar=0.8
+--iop-sif1-cycle-scalar=1.5
+
+--vu1-di-bit=0
+--vu-t-bit=1 
+
+#Fix for graphical glitches, menu speed and audio.

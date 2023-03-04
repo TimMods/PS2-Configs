@@ -1,0 +1,13 @@
+--vu1=jit-sync           #fixes black screen after ps2 logo
+--vu0-di-bits=0          #eliminates micro-freezes during races
+--vu1-di-bits=0          #eliminates micro-freezes during races
+--ee-cycle-scalar=2.0
+--ee-sif0-cycle-scalar=2.11
+--iop-cycle-scalar=2.0
+--host-audio-latency=2.57
+--vu1-mpg-cycles=424
+--vu0-mpg-cycles=424
+--vu1-jr-cache-policy=newprog
+--vu1-jalr-cache-policy=newprog
+--vu0-jr-cache-policy=newprog
+--vu0-jalr-cache-policy=newprog
