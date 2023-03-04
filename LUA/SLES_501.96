@@ -1,0 +1,6 @@
+apiRequest(0.1)    -- request version 0.1 API. Calling apiRequest() is mandatory.
+
+-- Turn off mipmapping in game engine. Completely fix flickering, and bad texturing. Don't require "gs-kernel-cl=mipmap"
+-- SLES_501.96 only!
+
+eeInsnReplace(0x2A1F80, 0x00000001, 0x00000000)

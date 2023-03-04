@@ -1,0 +1,4 @@
+--gs-kernel-cl="mipmap"
+--gs-kernel-cl-up="mipmap2x2"
+--gs-use-mipmap=1
+#Fix for texture glitches

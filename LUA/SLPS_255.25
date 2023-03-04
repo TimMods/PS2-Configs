@@ -1,0 +1,40 @@
+apiRequest(2.0)
+local gpr = require( "ee-gpr-alias" )
+local eeObj = getEEObject()
+-- Fix large stretched polygons block view of player characters, based on official patch
+local FixPointTable = function()
+   
+        local s6 = eeObj.GetGpr(gpr.s6)                 
+        local p5Tbl = eeObj.ReadMem32(s6+0x10)         
+        local numPts = eeObj.ReadMem32(p5Tbl+0x110)     
+        local pTbl = 0x1D2B200                         
+        for i = 1, numPts do
+            local stat = eeObj.ReadMem32(pTbl + 0xc) 
+            if (stat ~= 0) then                                   
+                if (i > 1) then                         
+                    stat = eeObj.ReadMem64(pTbl-0x10) 
+                    eeObj.WriteMem64(pTbl, stat)     
+                    stat = 0x0000000080000000         
+                    eeObj.WriteMem64(pTbl+8, stat)     
+                else
+                    stat = eeObj.ReadMem32(pTbl + 0x1c) 
+                    if (stat == 0) then                 
+                        stat = eeObj.ReadMem64(pTbl+0x10)
+                        eeObj.WriteMem64(pTbl, stat) 
+                        stat = 0x0000000080000000     
+                        eeObj.WriteMem64(pTbl+8, stat)           
+                    else
+                        eeObj.WriteMem64(pTbl, 0)                     
+                        eeObj.WriteMem64(pTbl+8, 0x0000000080000000) 
+                    end
+                end
+            else                                     
+                stat = eeObj.ReadMem32(pTbl + 8)     
+                if (stat <= 0x8000) then
+                    eeObj.WriteMem32(pTbl+8, 0x80000000)
+                end
+            end
+            pTbl = pTbl + 0x10
+        end
+end
+eeObj.AddHook(0x3D9DC4, 0x008e150180, FixPointTable)

@@ -1,0 +1,8 @@
+apiRequest(0.1)	-- request version 0.1 API. Calling apiRequest() is mandatory.
+
+-- Collision detection fix for Stage 3 onwards // Rearranging COP2 instructions that use old results
+
+eeInsnReplace(0x1A3154, 0x4B00682C, 0x48498800)
+eeInsnReplace(0x1A3158, 0x4B0C682C, 0x4B00682C)
+eeInsnReplace(0x1A3164, 0x48498800, 0x484A8800)
+eeInsnReplace(0x1A3168, 0x484A8800, 0x4B0C682C)

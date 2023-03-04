@@ -1,0 +1,2 @@
+--fpu-accurate-range=0x147CC0,0x147EA0
+#Fix for freeze after leaving the first area.

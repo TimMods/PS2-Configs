@@ -1,0 +1,6 @@
+--gs-progressive=1
+--gs-uprender=2x2
+--gs-upscale=Point
+--vu-hack-triace=1
+--gs-kernel-cl-up="up2x2simple"
+#Looks like it fix all graphical issues excluding purple effect in Forest at start of game

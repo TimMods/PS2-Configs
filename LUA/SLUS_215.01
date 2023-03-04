@@ -1,0 +1,6 @@
+apiRequest(0.1)
+
+-- SLUS-21501
+
+eeInsnReplace(0x11e104, 0x0c066a5c, 0x00000000)
+eeInsnReplace(0x11e10c, 0x0c08a8ec, 0x00000000)

@@ -1,0 +1,6 @@
+apiRequest(0.1)
+
+-- SLPS-25606
+
+eeInsnReplace(0x11e094, 0x0c066804, 0x00000000)
+eeInsnReplace(0x11e09c, 0x0c08a654, 0x00000000)

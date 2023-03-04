@@ -1,0 +1,19 @@
+apiRequest(2.2) --make sure we are running latest emu
+
+
+local emuObj = getEmuObject()
+emuObj.SetGsTitleFix( "forceSimpleFetch", "reserved", { texMode=1 } )
+
+-- Wide Screen at boot, 640x448p at boot, speedhack by removing some effects
+emuMediaPatch(0x1fc, 12 + 0x6e0, { 0x27bdfee0 }, { 0x03e00008 })
+emuMediaPatch(0x1fc, 12 + 0x6e4, { 0x7fb300d0 }, { 0x00000000 })
+emuMediaPatch(0x1f8, 12 + 0x720, { 0x27bdff50 }, { 0x03e00008 })
+emuMediaPatch(0x1f8, 12 + 0x724, { 0x3c02002d }, { 0x00000000 })
+emuMediaPatch(0x2e4, 12 + 0x5b4, { 0x3c04002e }, { 0x24040001 })
+emuMediaPatch(0x2e4, 12 + 0x5b8, { 0x8c8486d8 }, { 0x00000000 })
+emuMediaPatch(0x40d, 12 + 0x14c, { 0x3c013faa }, { 0x3c013fe3 })
+emuMediaPatch(0x40d, 12 + 0x150, { 0x3421aaab }, { 0x34218e39 })
+emuMediaPatch(0x3d0, 12 + 0x608, { 0xac4086dc }, { 0xa04986dc })
+emuMediaPatch(0x2e4, 12 + 0x5d4, { 0x8ca286dc }, { 0x24020001 })
+emuMediaPatch(0x169, 12 + 0x6b0, { 0x27bdff60 }, { 0x03e00008 })
+emuMediaPatch(0x169, 12 + 0x6b4, { 0x7fb10080 }, { 0x00000000 })

@@ -1,0 +1,8 @@
+--vu0-no-clamping=0
+--vu0-clamp-results=1
+--vu1-no-clamping=0
+--vu1-clamp-results=1
+--cop2-no-clamping=0
+--cop2-clamp-results=1
+
+#fix for missing character models tested wit Jak Emu
